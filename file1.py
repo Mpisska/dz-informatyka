@@ -16,3 +16,9 @@ iloraz = a / b
 iloraz_calkowity = a // b
 reszta = a % b
 kwadrat = a ** 2
+
+#3
+kurs = 4.74
+cena = 126
+zloty = kurs * cena
+print(f'Do zapłaty: {zloty} zł')
