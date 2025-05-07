@@ -1,4 +1,4 @@
-#25
+#26
 def collatz(c, n):
     for _ in range(n):
         if c % 2 == 0:
