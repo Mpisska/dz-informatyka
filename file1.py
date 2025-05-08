@@ -1,9 +1,9 @@
 #1
-haslo1 = "Podróże kształcą i otwierają umysł."
-haslo2 = "Świat czeka na odkrycie – ruszaj w drogę!"
-haslo3 = "Każda podróż to nowa historia do opowiedzenia."
-
-print(haslo1 + "\n" + haslo2 + "\n" + haslo3)
+haslo =["Podróże kształcą i otwierają umysł.",
+        "Świat czeka na odkrycie – ruszaj w drogę",
+        "Każda podróż to nowa historia do opowiedzenia."]
+for h in haslo:
+    print(h)
 
 #2
 a = 10
