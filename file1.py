@@ -75,12 +75,31 @@ def pole_kw(bok):
 print(pole_kw(25))
 print(pole_kw(101))
 
+#11
+def obw_pr(bok1, bok2):
+    return bok1 * 2 + bok2 *2
+print(obw_pr(25, 30))
+print(obw_pr(105, 95))
+
+#12
+def waga(kg):
+    return kg * 2.2
+print(waga(2))
+print(waga(15))
+
+#13
+def godz_waw(g):
+    return (g + 9) % 24
+print(godz_waw(8))
+print(godz_waw(21))
+
 #14
 def cena(f):
     usd = 4.75
     funt = 0.45
     return (f*usd)/funt
 print(cena(1.35))
+print(cena(3.98))
 
 #15
 x = 3
@@ -94,6 +113,34 @@ if n%3 == 0 and n%7 ==0:
 else:
     print('no')
 
+#17
+def ile(k):
+    return k * k
+print(ile(5))
+print(ile(6))
+
+#18
+def ile_kolor(k, kolor):
+    if kolor not in ['c', 'n']:
+        return "Nieprawidłowy kolor. Użyj 'c' dla czerwonego lub 'n' dla niebieskiego."
+    liczba_korali = k * k
+    if kolor == 'c':
+        return (liczba_korali + 1) // 2
+    else:
+        return liczba_korali // 2
+print(ile_kolor(6, "c"))
+print(ile_kolor(7, "c"))
+print(ile_kolor(6, "n"))
+print(ile_kolor(7, "n"))
+
+#19
+def piramida(k):
+    if k < 1:
+        return 0
+    return k * (k + 1) // 2
+print(piramida(5))
+print(piramida(6))
+
 #20
 def lata(ile):
     if ile < 18:
@@ -103,6 +150,8 @@ def lata(ile):
     else:
         print(1)
 print(lata(14))
+print(lata(46))
+print(lata(65))
 
 #21
 def bmi(kg, m):
@@ -114,11 +163,15 @@ def bmi(kg, m):
     else:
         print('prawidlowa waga')
 print(bmi(50, 1.63) )
+print(bmi(44, 1.63))
+print(bmi(90, 1.63))
 
 #22
 def naj(liczba1, liczba2, liczba3):
     return max(liczba1, liczba2, liczba3)
 print(naj(1, 2, 3))
+print(bmi(90, 1.63))
+print(naj(99, 33, 12))
 
 #23
 def waga(pocz, n):
@@ -126,9 +179,14 @@ def waga(pocz, n):
     masa_koncowa = pocz + przyrost
     return masa_koncowa
 print(waga(2, 2))
+print(waga(5, 3))
 
 #24
 def skarbonka(ile, n):
     suma_wrzut = 2 ** n - 1
     return ile + suma_wrzut
 print(skarbonka(12, 2))
+print(skarbonka(0, 5))
+
+#25
+# nie wiem

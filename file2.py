@@ -6,6 +6,8 @@ def collatz(c, n):
         else:
             c = c * 3 + 1
     return c
+print(collatz(11, 5))
+print(collatz(1, 10))
 
 #27
 def suma(liczba):
@@ -14,6 +16,21 @@ def suma(liczba):
         if int(cyfra) % 2 == 1:
             suma_nieparzystych += int(cyfra)
     return suma_nieparzystych
+print(suma(1122445))
+print(suma(986713))
+
+#28
+def NWD(a, b):
+    i = 0
+    while a != b:
+        if a > b:
+            a = a - b
+            i += 1
+        else:
+            b = b - a
+            i += 1
+    return i
+print(f'liczba itercij {NWD(30, 8)}')
 
 #29
 def ile_pol():
