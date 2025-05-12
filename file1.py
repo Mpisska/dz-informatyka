@@ -33,17 +33,14 @@ else:
     print('w Polsce taniej')
 
 #5
-day1 = 12
-day2 = 14
-day3 = 18
-suma = day1+day2+day3
+day1, day2, day3 = [12, 14, 18]
+suma = day1 + day2 + day3
 srednia = suma/2
 
 #6
 def jak_szybko(t, s):
     srednia_predkosc = s / t
     return srednia_predkosc
-
 print(f"Wynik 1 {jak_szybko(2.5, 1320)}")
 print(f"Wynik 2: {jak_szybko(3, 1320)}")
 
@@ -51,7 +48,6 @@ print(f"Wynik 2: {jak_szybko(3, 1320)}")
 def zamiana(m):
     km = m * 1.609
     return km
-
 print(f'Wynik: {zamiana(10)}')
 print(f'Wynik: {zamiana(12)}')
 
